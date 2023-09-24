@@ -1,0 +1,15 @@
+{% extends "app/base.html" %}
+{% load static%}
+
+{%block content %}
+
+<div class = "back">
+    <div class = "main overlay">
+        <hr>
+     <strong><p id = "section3" >Our Service Area  🗺 <p></strong>
+         <hr>
+     </div>
+     <div class ="container map">
+     <img src="{% static 'images/map.png' %}"  width="850px" >
+    </div>
+{% endblock%}    

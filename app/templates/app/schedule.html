@@ -1,0 +1,275 @@
+{% extends "app/base.html" %}
+{% load static%}
+
+{%block content %}
+
+
+<img src="{% static 'images/spacious-deck-with-fire-pit-table-heater-generative-ai_779468-8363.jpg' %}" class="background-image loadin-animation">
+<div class = "fullscreen-container">  
+<div class ="overlay-text container">
+<p >Get a FREE Heater When You Build Your Dream Deck with Us<p>
+<a href= "/quote"><button type="button" class="btn btn-light btn-lg">CLAIM YOURS WITH OUR FREE CONSULTATION </button></a>
+</div>
+</div>
+
+<div class="icon-container">
+    <a href="/policy" style="color: inherit; text-decoration: none;">
+         <p><i class="far fa-message fa-3x"></i></p>
+     </a>
+ </div>
+
+
+
+
+<!-- Offers Section -->
+
+
+
+<hr><br><br><br>
+<div class="container">
+    <p class="portfoli" style="font-size: 30px; font-weight: bold;">
+        If it's too cold to enjoy outdoor space in winter, we've got you covered!
+    </p>
+    <p class="portfoli" style="font-size: 30px;">
+        We're giving away 2 big outdoor heaters during the cold winter season, making it a reality to feel warm and enjoy your outdoor living space even in the chilliest weather.
+    </p>
+</div>
+
+<!-- Deck options -->
+
+
+<br><br>
+<div class="container">
+    <h1 class="portfolioo">BUILD YOUR CUSTOM HOMES WITH</h1>
+    <div class="portfolioooo">
+        <div class="row">
+            <div class="col-md-6 loading-animation">
+                <p><i class="fas fa-check-circle"style="color:gold;"></i> Wood decks</p>
+            </div>
+            <div class="col-md-6  loading-animation">
+                <p><i class="fas fa-check-circle"style="color:gold;"></i> Composite decks</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6  loading-animation">
+                <p><i class="fas fa-check-circle"style="color:gold;"></i> Vinyl decks</p>
+            </div>
+          
+        </div>
+        <div class="row">
+            <div class="col-md-12  loading-animation">
+                <p><i class="fas fa-check-circle "style="color:gold;"></i>AND MORE...</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<div class= "container">
+    <p class = "port">
+        At Amazing Decks in Seattle, our commitment to excellence extends to every aspect of your project. We take pride in using only the finest materials and state-of-the-art equipment, all while adhering to the strictest standards of quality and safety. Our dedication to craftsmanship is matched by our desire to provide you with endless possibilities for your deck's design. Choose from a wide spectrum of design options, an array of colors, captivating styles, and innovative features to create a deck that is both distinctive and functional.
+    </p>
+</div>
+<div class= "container">
+    <p class= "port"> But that's not all. For a limited time, we're thrilled to present a special offer just for you. Opt for our deck construction service, and we'll gift you a premium portable heater valued at $500. This energy-efficient and safe heater will envelop your deck in warmth, ensuring your comfort even during the coldest days of the year.
+    </p>
+</div>
+
+
+
+
+<div class="">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="define-container loading-animation">
+                <div>
+                    <p class="number"style="color:gold;">EXPERTISE</p>
+                    <p class="t">AND YEARS OF EXPERIENCE</p>
+                </div>
+                <div>
+                    <p class="number"style="color:gold;">1000+</p>
+                    <p class="t">PROJECTS COMPLETED IN SEATTLE AND NEARBY</p>
+                </div>
+
+                <div>
+                    <p class="number"style="color:gold;">A+</p>
+                    <p class="t">BETTER BUSINESS BUREAU</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<h1 class="portfolioo">FILL OUT THIS FORM BELOW FOR RESERVATIONS</h1>
+<br><br>
+
+<div class = "container ">
+    <div class = "form ">
+        <br>
+        <div class="col-md-12 ">
+            <form method="post">
+                {% csrf_token %}
+                <i>{{ form.as_p }}
+                    <br>
+                    <button type="submit" class="btn-lg bg-warning mx-center">Submit</button><i>
+            </form>
+        </div>
+    </div>
+</div>
+
+<br><br>
+
+
+
+<h1 class="portfolioo">FREQUENTLY ASKED QUESTIONS</h1>
+<div id="accordion" class= "container">
+    <!-- Question 1 -->
+    <div class="card">
+        <div class="card-header" id="headingOne">
+            <h5 class="mb-0">
+                <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                   How do I claim my free heater?
+                </button>
+            </h5>
+        </div>
+
+        <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+            <div class="card-body">
+                To claim your free heater, you need to fill out the form <a href ="/quote">here</a> or call us at +1 (123) 456-7890. We
+will schedule a free estimate and consultation with you. Once you sign the contract with us, we
+will order your heater and deliver it to you when we start working on your deck
+            </div>
+        </div>
+    </div>
+
+    <!-- Question 2 -->
+    <div class="card">
+        <div class="card-header" id="headingTwo">
+            <h5 class="mb-0">
+                <button class="btn btn-link " data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    How long does it take to build a deck?
+                </button>
+            </h5>
+        </div>
+
+        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+            <div class="card-body">
+                The time frame for building a deck depends on various factors, such as the size, complexity,
+design, and weather conditions of the project. Typically, it takes us between 2 to 4 weeks to
+complete a deck
+            </div>
+        </div>
+    </div>
+
+    <!-- Question 3 -->
+    <div class="card">
+        <div class="card-header" id="headingThree">
+            <h5 class="mb-0">
+                <button class="btn btn-link" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                     How much does it cost to build a deck?
+                </button>
+            </h5>
+        </div>
+
+        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+            <div class="card-body">
+                The cost of building a deck varies depending on the type of material, design, features, and size
+of the deck. We offer competitive prices and transparent quotes. We also offer financing options
+and payment plans to suit your budget.
+            </div>
+        </div>
+    </div>
+
+    <!-- Question 4 -->
+    
+    </div>
+</div>
+</div>
+<br>
+
+
+
+
+<div class = "main overlay">
+    <hr>
+ <strong><p id="section4" style="color: goldenrod; font-size: 50px; text-align: center; position: relative;">
+    TESTIMONIALS
+    <span style="position: absolute; left: 0; top: 50%; width: 100%; border-top: 1px solid goldenrod; z-index: -1;"></span>
+</p></strong>
+     <hr>
+ 
+ {% comment %} <div class="introduction container">
+    <p>We are a dedicated team of professionals committed to providing high-quality deck construction and remodeling services. Our portfolio showcases the many projects we have completed over the years, from rooftop terraces to small balconies. With our expertise and attention to detail, every job is completed with excellence. We take pride in giving our customers the highest level of satisfaction when it comes to deck design and construction. You can count on us for all your deck installation needs!</p>
+</div> {% endcomment %}
+ <div class=" carousel">
+    <div id="reviewsCarousel" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ul class="carousel-indicators">
+            <li data-target="#reviewsCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#reviewsCarousel" data-slide-to="1"></li>
+            <li data-target="#reviewsCarousel" data-slide-to="2"></li>
+            <li data-target="#reviewsCarousel" data-slide-to="3"></li>
+            <li data-target="#reviewsCarousel" data-slide-to="4"></li>
+        </ul>
+
+        <!-- Slides -->
+        <div class="carousel-inner">
+            <br><br>
+            <div class="carousel-item active">
+                <p class="text-center mx-md-5" style="font-size: 30px;">
+                    "Our deck looks amazing! The team at AMAZING DECKS IN SEATTLE transformed our outdoor space into a beautiful retreat. We couldn't be happier with the result."
+                </p>
+                <p class="text-right container mt-3"><em>- John D.</em></p>
+            </div>
+        
+            <div class="carousel-item">
+                <p class="text-center mx-md-5" style="font-size: 30px;">
+                    "The attention to detail in the deck construction exceeded our expectations. From design to completion, AMAZING DECKS IN SEATTLE was professional and efficient."
+                </p>
+                <p class="text-right container mt-3"><em>- Sarah M.</em></p>
+            </div>
+        
+            <div class="carousel-item">
+                <p class="text-center mx-md-5" style="font-size: 30px;">
+                    "Impressive craftsmanship! AMAZING DECKS IN SEATTLE truly understands deck remodeling. They transformed our old deck into a modern outdoor living space."
+                </p>
+                <p class="text-right container mt-3"><em>- Mark H.</em></p>
+            </div>
+        
+            <div class="carousel-item">
+                <p class="text-center mx-md-5" style="font-size: 30px;">
+                    "The ADIS team was very friendly and professional. From the design stage through the final walk-through, it was a very comfortable and enjoyable experience. We were particularly impressed with their ability to adhere to all timelines and expectations throughout the entire process. I highly recommend RDG!"
+                </p>
+                <p class="text-right container mt-3"><em>- Van M.</em></p>
+            </div>
+        
+            <div class="carousel-item">
+                <p class="text-center mx-md-5" style="font-size: 30px;">
+                    "ADIS Design blew me away at every step in the process of creating my outdoor oasis. They worked with me personally on design renderings, ideal material recommendations, and even itemized budget options to cater to my needs. The entire RDG team worked as true professionals, with impeccable attention to detail and impressive responsiveness and speed in getting the project done"
+                </p>
+                <p class="text-right container mt-3"><em>- Bruce K.</em></p>
+                <br><br>
+            </div>
+        </div>
+        
+<br>
+        <!-- Controls -->
+        <a class="carousel-control-prev" href="#reviewsCarousel" data-slide="prev">
+            <span class="carousel-control-prev-icon "></span>
+        </a>
+        <a class="carousel-control-next" href="#reviewsCarousel" data-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </a>
+    </div>
+</div>
+<br>
+<br><br>
+</div>
+
+
+
+
+
+{% endblock%}

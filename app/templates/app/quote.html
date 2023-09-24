@@ -1,0 +1,36 @@
+{% extends "app/base.html" %}
+{% load static%}
+
+{%block content %}
+
+<br><br><br>
+<div class = "main overlay">
+    <hr>
+ <strong><p id = "section2">SCHEDULE A FREE ESTIMATE OF OUR SERVICE<p></strong>
+     <hr>
+ </div>
+ <div class="black-bg">
+    <strong><a href ="/area"><span class="right-aligned-text">SEE OUR SERVICE AREA</span></a></strong>
+        
+</div>
+<br><br><br>
+<div class= "container">
+    <p class = "porto">
+        Please fill out this below form for the quick estimate of our services we are always ready for your help </p>
+
+
+<div class = "container ">
+    <div class = "form ">
+        <br>
+        <div class="col-md-12 ">
+            <form method="post">
+                {% csrf_token %}
+                <i>{{ form.as_p }}
+                    <br>
+                    <button type="submit" class="btn-lg bg-warning mx-center">Submit</button><i>
+            </form>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

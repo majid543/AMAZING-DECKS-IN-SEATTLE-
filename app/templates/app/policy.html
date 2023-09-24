@@ -1,0 +1,42 @@
+{% extends "app/base.html" %}
+{% load static%}
+
+{%block content %}
+<i><div class ="container">
+    <br> <br> <br> <br> <br> <br>
+    <section id="contact" class="bg-light py-5">
+        <div class="container">
+            <h2 class="text-center">Contact Us</h2>
+            <p class="text-center">Have questions or need a custom quote? Get in touch with us today.</p>
+            <div class="row">
+                <div class="col-md-6 offset-md-3">
+                    <form method="post" >
+                        {% csrf_token %}
+                        {{ form.as_p }}
+                        <button type="submit" class= "btn btn-primary btn-block">Submit</button>
+                    </form>
+                
+                </div>
+            </div>
+        </div>
+    </section>
+    <br> <br> <br> <br> <br> <br>
+
+<h1>Privacy Policy</h1>
+<br> <br> 
+
+<p>This Privacy Policy is prepared by <strong><span style="color:gold; font-size:20px;">AMAZING DECKS IN SEATTLE</span></strong> and whose registered address is <strong>2500 N 45th St, Seattle, WA 98103</strong> We are committed to protecting and preserving the privacy of our visitors when visiting our site or communicating electronically with us.</p>
+
+<p>This policy sets out how we process any <strong>personal data</strong> we collect from you or that you provide to us through our website and social media sites. We confirm that we will keep your information <strong>secure</strong> and that we will comply fully with all applicable <strong>UNITED STATES OF AMERICA</strong> Data Protection legislation and regulations. Please read the following carefully to understand what happens to personal data that you choose to provide to us, or that we collect from you when you visit our sites. By submitting information you are accepting and consenting to the practices described in this policy.</p>
+
+<!-- More content here -->
+
+<p>Your rights access to your personal data</p>
+<p>You have the right to ensure that your personal data is being processed lawfully Subject Access Right. Your subject access right can be exercised in accordance with data protection laws and regulations. Any subject access request must be made in writing to <strong><span style="color:gold; font-size:20px;">David Leonardo (Founder)</span></strong> - <strong>cell:</strong> <strong>7605079385</strong>. We will provide your personal data to you within the statutory time frames. To enable us to trace any of your data that we may be holding, we may need to request further information from you. If you have a complaint about how we have used your information, you have the right to complain to the <strong>Information Commissioner’s Office (ICO)</strong>.</p>
+
+
+    <br> <br>
+    <i>
+</div>
+
+{% endblock %}
