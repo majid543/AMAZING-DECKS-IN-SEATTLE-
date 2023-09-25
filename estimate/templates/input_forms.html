@@ -1,0 +1,33 @@
+{% load static%}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Input Form</title>
+</head>
+<body>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{% static 'css/estimate.css' %}">
+    <br><br><br>
+
+ <div class="black-bg">
+    
+    <h1>CALCULATE QUICK ESTIMATE OF THE SERVICES</h1>
+
+
+
+
+<div class="card">
+    <h1>CALCULATE A QUICK ESTIMATE OF THE SERVICE</h1>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.age.label_tag }}
+        {{ form.age }}
+        {{ form.distance.label_tag }}
+        {{ form.distance }}
+        {{ form.deck_height.label_tag }}
+        {{ form.deck_height }}<br>
+        <button type="submit">Calculate</button>
+    </form>
+</div></body>
+</html>

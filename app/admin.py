@@ -8,5 +8,4 @@ admin.site.register(Project)
 admin.site.register(Picture)
 admin.site.register(Image)
 admin.site.register(ScheduleAppointment)
-admin.site.register(ScheduleAppointment)
-# Register your models here.
+
