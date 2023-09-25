@@ -8,7 +8,7 @@ from .models import Customers,Picture,Project,ScheduleAppointment
 from .forms import CustomersForm,ScheduleForm
 from django.shortcuts import get_object_or_404
 
-class CustomersCreateView(CreateView):
+class CustomerCreateView(CreateView):
     form_class = CustomersForm
     template_name = 'app/quote.html'  # Replace with the actual template name
     def get_success_url(self):

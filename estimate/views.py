@@ -10,6 +10,7 @@ def customers_create_view(request):
         form = ScheduleForm(request.POST)
         if form.is_valid():
             # Process the form data here
+            form.save()
             # Redirect to the same page (self.request.path)
             return redirect(request.path)
     else:

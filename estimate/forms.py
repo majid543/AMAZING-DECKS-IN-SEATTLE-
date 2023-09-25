@@ -1,5 +1,5 @@
 from django import forms
-from .models import UserInput
+from .models import UserInput,Schedule
 
 class UserInputForm(forms.ModelForm):
     age = forms.IntegerField(
@@ -28,3 +28,6 @@ class ScheduleForm(forms.Form):
     email = forms.EmailField(
         widget=forms.EmailInput(attrs={'class': 'form-control', 'type': 'email', 'name': 'Email', 'placeholder': 'Email'})
     )
+    class Meta:
+        model:Schedule
+        fields = ['name','email']
