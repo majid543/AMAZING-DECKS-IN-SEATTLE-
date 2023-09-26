@@ -9,28 +9,32 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="{% static 'css/estimate.css' %}">
     <br><br><br>
-
- <div class="black-bg">
+    <div class="rounded-circle bg-light col-md-8 text-black">
+        <div class="black-bg">
+            <br>
+            <i>
+                <h1 class="rounded-x1 lead text-primary" style="color: white; font-size: 50px;">CALCULATE QUICK ESTIMATE OF THE SERVICES</h1>
+            </i>
+            <br>
     
-    <h1>CALCULATE QUICK ESTIMATE OF THE SERVICES</h1>
-    <strong><a href ="/area"><h1 class="right-aligned-text">SEE OUR SERVICE AREA</h1></a></strong>
-        
-
-
-
-<div class = "container ">
-    <div class = "form ">
-        <br>
-        <div class="col-md-12 ">
-            <form method="post">
-                {% csrf_token %}
-                <i>{{ form.as_p }}
+            <div class="container rounded-pill">
+                <div class="form">
                     <br>
-                    <button type="submit" class="btn-lg bg-primary mx-center" href="/calculate-charges">Submit</button><i>
-            </form>
+                    <div class="col-md-12">
+                        <form method="post">
+                            {% csrf_token %}
+                            <div class="form-group">
+                                {{ form.label_tag }}
+                                {{ form }}
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-lg mx-auto d-block">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
-</div>
+    
     
 </body>
 </html>

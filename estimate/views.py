@@ -12,7 +12,7 @@ def customers_create_view(request):
             # Process the form data here
             form.save()
             # Redirect to the same page (self.request.path)
-            return redirect(request.path)
+            return redirect("/calculate-charges")
     else:
         form = ScheduleForm()
     
@@ -47,7 +47,7 @@ def calculate_charges(request):
             # Calculate service charges
             service_charges = calculate_service_charges(age, distance, deck_height)
 
-            return render(request, 'result.html', {'service_charges': service_charges})
+            return render(request, 'result.html')
     else:
         form = UserInputForm()
     return render(request, 'input_forms.html', {'form': form})

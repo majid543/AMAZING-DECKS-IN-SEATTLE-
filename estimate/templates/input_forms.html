@@ -9,16 +9,14 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="{% static 'css/estimate.css' %}">
     <br><br><br>
-
+<i>
  <div class="black-bg">
     
-    <h1>CALCULATE QUICK ESTIMATE OF THE SERVICES</h1>
+    <br>
 
-
-
-
-<div class="card">
-    <h1>CALCULATE A QUICK ESTIMATE OF THE SERVICE</h1>
+<div class="rounded-circle bg-light col-md-8">
+<div class="card ">
+    <h1 style="color:white;font-size:50px; " class = "rounded-circle">CALCULATE A QUICK ESTIMATE OF THE SERVICE</h1><br>
     <form method="post">
         {% csrf_token %}
         {{ form.age.label_tag }}
@@ -28,6 +26,6 @@
         {{ form.deck_height.label_tag }}
         {{ form.deck_height }}<br>
         <button type="submit">Calculate</button>
-    </form>
+    </form><i>
 </div></body>
 </html>

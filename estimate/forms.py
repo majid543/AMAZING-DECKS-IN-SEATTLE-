@@ -20,7 +20,7 @@ class UserInputForm(forms.ModelForm):
         fields = ['age', 'distance', 'deck_height']
 
 
-class ScheduleForm(forms.Form):
+class ScheduleForm(forms.ModelForm):
     name = forms.CharField(
         max_length=100,
         widget=forms.TextInput(attrs={'class': 'form-control', 'type': 'text', 'name': 'Name', 'placeholder': 'Name'})
@@ -28,6 +28,7 @@ class ScheduleForm(forms.Form):
     email = forms.EmailField(
         widget=forms.EmailInput(attrs={'class': 'form-control', 'type': 'email', 'name': 'Email', 'placeholder': 'Email'})
     )
+
     class Meta:
-        model:Schedule
+        model = Schedule
         fields = ['name','email']
