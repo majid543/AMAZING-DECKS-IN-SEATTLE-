@@ -23,7 +23,54 @@
     }
 }
 
+.header-text {
+    font-family: 'ADLaM Display', cursive;
+    font-family: 'Cousine', monospace;
+    font-family: 'Kanit', sans-serif;
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Roboto Slab', serif;
+    font-size: 50px;
+    color: black;
+    text-align: center;
+    margin-bottom: 20px;
+}
 
+.content-text {
+    font-family: 'ADLaM Display', cursive;
+    font-family: 'Cousine', monospace;
+    font-family: 'Kanit', sans-serif;
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Roboto Slab', serif;
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.custom-list {
+    list-style-type: none;
+    font-family: 'ADLaM Display', cursive;
+    font-family: 'Cousine', monospace;
+    font-family: 'Kanit', sans-serif;
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Roboto Slab', serif;
+    text-align: center;
+    padding-left: 0;
+}
+
+.custom-list li {
+    margin-bottom: 10px;
+}
+
+.image-grid {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.image {
+    margin: 20px;
+}
 
 
 /* Apply the animation class */
@@ -104,7 +151,7 @@
 .overlay-text {  
     position: absolute;
     color: rgb(245, 170, 32);
-    font-size: 80px;
+    font-size: 60px;
     font-family: 'ADLaM Display', cursive;
    font-family: 'Cousine', monospace;
      font-family: 'Oswald', sans-serif;
@@ -338,6 +385,11 @@ margin-top: 70px;
     font-family: "Times New Roman", Times, serif;
     
 }
+.list-item-name {
+    font-family: 'Times New Roman', Times, serif; /* Times Roman font style */
+    font-size: 18px; /* Adjust the font size as needed */ /* Make the text bold for emphasis */
+    color: #333; /* Change the color of the text */
+}
 
 .about {
     color: white;
@@ -365,6 +417,30 @@ margin-top: 70px;
     font-family: Arial, sans-serif;
     text-shadow: 4px 2px 4px rgb(0, 0, 0); 
     margin-top: 50px;
+}
+.custom-list {
+    list-style-type: none;
+    margin-left: 0;
+    padding-left: 0;
+}
+
+.custom-list li {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.custom-list i {
+    margin-right: 10px;
+    font-size: 24px; /* Adjust the icon size as needed */
+    color: #007bff; /* Change the color of the icons */
+}
+
+.list-item-name {
+    font-family: 'Times New Roman', Times, serif; /* Times Roman font style */
+    font-size: 18px; /* Adjust the font size as needed */
+    font-weight: bold; /* Make the text bold for emphasis */
+    color: #333; /* Change the color of the text */
 }
 
 
