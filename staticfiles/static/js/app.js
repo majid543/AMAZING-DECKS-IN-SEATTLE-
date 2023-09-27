@@ -106,3 +106,28 @@ function handleScroll() {
 
 // Attach a scroll event listener to trigger the animation
 window.addEventListener('scroll', handleScroll);
+
+
+
+let currentQuestion = 0;
+    
+    function nextQuestion() {
+        const questionSections = document.querySelectorAll('.questionSection');
+        questionSections[currentQuestion].classList.add('hidden');
+        currentQuestion++;
+        if (currentQuestion < questionSections.length) {
+            questionSections[currentQuestion].classList.remove('hidden');
+        }
+    }
+
+    function calculateCharges() {
+        // Perform calculations and get service charges
+        // You may need to use AJAX to send data to the server and receive the result
+        const serviceCharges = calculate_service_charges(/* pass data here */);
+
+        // Display the result
+        document.getElementById('serviceCharges').textContent = serviceCharges;
+
+        // Show the result section
+        document.querySelector('.resultSection').classList.remove('hidden');
+    }

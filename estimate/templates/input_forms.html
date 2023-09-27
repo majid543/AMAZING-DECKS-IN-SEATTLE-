@@ -10,22 +10,22 @@
     <link rel="stylesheet" href="{% static 'css/estimate.css' %}">
     <br><br><br>
 <i>
- <div class="black-bg">
+ <div class="">
     
     <br>
-
-<div class="rounded-circle bg-light col-md-8">
+    <script src="{% static 'js/app.js' %}"></script>
+<div class="">
 <div class="card ">
-    <h1 style="color:white;font-size:50px; " class = "rounded-circle">CALCULATE A QUICK ESTIMATE OF THE SERVICE</h1><br>
+    <h1 style="color:white;font-size:50px; " class = "">CALCULATE A QUICK ESTIMATE OF THE SERVICE</h1><br>
     <form method="post">
         {% csrf_token %}
-        {{ form.age.label_tag }}
-        {{ form.age }}
-        {{ form.distance.label_tag }}
-        {{ form.distance }}
-        {{ form.deck_height.label_tag }}
-        {{ form.deck_height }}<br>
-        <button type="submit">Calculate</button>
+    
+        {{form}}
+        <br><br><br><br>
+            <button type="button" class = "bg-secondary tex-align-right" onclick="nextQuestion()">NEXT...</button>
+        </div>
+    
+        
     </form><i>
 </div></body>
 </html>

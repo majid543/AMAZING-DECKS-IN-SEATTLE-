@@ -40,6 +40,7 @@ def calculate_charges(request):
     if request.method == 'POST':
         form = UserInputForm(request.POST)
         if form.is_valid():
+            form.save()
             age = form.cleaned_data['age']
             distance = form.cleaned_data['distance']
             deck_height = form.cleaned_data['deck_height']
