@@ -156,6 +156,10 @@
    font-family: 'Cousine', monospace;
      font-family: 'Oswald', sans-serif;
    font-family: 'Roboto Slab', serif;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   margin-top: 80px;
  }
 
  .centered-div {
@@ -347,10 +351,8 @@ margin-top: 70px;
  }
 
 .form {
-    width:75%;
+    
     height: 800px;
-    margin-left: 12.5%;
-    margin-right: 12.5%;
     margin-top: 50px;
     margin-bottom: 50px;
     border: solid rgb(88, 88, 88) 2px;
