@@ -3,11 +3,11 @@
 
 {%block content %}
 
-<img src="{% static 'images/123.jpg' %}" class="background-image loadin-animation">
+<img src="{% static 'images/123.jpg' %}" class="background-image loadin-animation custom-fullscreen-image">
 <div class = "fullscreen-container">  
 <div class ="overlay-text container">
 <p >Elevating Outdoor Living with Our <strong>Premium</strong> Deck Services<p>
-<a href= "/gallery"><button type="button" class="btn btn-light btn-lg">Explore our project gallery   </button></a>
+<a href= "/gallery"><button type="button" class="btn btn-light btn-md">Explore our project gallery   </button></a>
 </div>
 </div>
 
@@ -25,32 +25,32 @@
             <p class="header-text">
                 AMAZING DECKS IN SEATTLE
             </p>
-            <br><br>
+            <br>
         </strong>
-        <p class="content-text mx-3"> <!-- Add mx-3 class for horizontal margin -->
+        <p class="content-text text-center "> <!-- Add mx-3 class for horizontal margin -->
             Are you in search of a dependable construction firm for your upcoming project? Your search ends here with AMAZING DECKS IN SEATTLE! Our expertise lies in crafting low-maintenance outdoor living spaces through exceptional deck construction. Our team comprises highly proficient experts, ensuring top-tier outcomes.
             Our dedicated customer service team collaborates closely with you, guiding you through every phase, from design to construction, to ensure that we meet your specific needs and adhere to all building regulations. We also provide precise 2D and 3D project designs to offer you a comprehensive visualization of your project. We offer...
         </p>
         <br>
         <ul class="custom-list mx-3">
     <li>
-        <i class="fas fa-check-circle mx-5"></i>
+        <i class="fas fa-check-circle mx-5" style="color: gold;"></i>
         <span class="list-item-name">Crafted with Excellence</span>
     </li>
     <li>
-        <i class="fas fa-check-circle mx-5"></i>
+        <i class="fas fa-check-circle mx-5" style="color: gold;"></i>
         <span class="list-item-name">Premium-Quality Materials</span>
     </li>
     <li>
-        <i class="fas fa-check-circle mx-5"></i>
+        <i class="fas fa-check-circle mx-5" style="color: gold;"></i>
         <span class="list-item-name">Personalized Service</span>
     </li>
     <li>
-        <i class="fas fa-check-circle mx-5"></i>
+        <i class="fas fa-check-circle mx-5" style="color: gold;"></i>
         <span class="list-item-name">Stylish Design</span>
     </li>
     <li>
-        <i class="fas fa-check-circle mx-5"></i>
+        <i class="fas fa-check-circle mx-5" style="color: gold;"></i>
         <span class="list-item-name">Secure Deck Railing Solutions</span>
     </li>
 </ul>
@@ -73,7 +73,7 @@
                 <img src="{% static 'images/2.PNG' %}" class="scroll-animation loading-animation" width="300" height="300" alt="Image 2">
             </div>
             <div class="image">
-                <img src="{% static 'images/3.png' %}" class="scroll-animation loading-animation" width="300" height="300" alt="Image 3">
+                <img src="{% static 'images/3.png' %}" class=" scroll-animation loading-animation" width="300" height="300" alt="Image 3">
             </div>
             <div class="image">
                 <img src="{% static 'images/4.JPG' %}" class="scroll-animation loading-animation" width="300" height="300" alt="Image 4">
@@ -81,44 +81,42 @@
         </div>
     </div>
 </div>
+</div>
 
-
-    <div class="container-fluid" style="padding: 0;">
-        <div class="row" style="height: 900px; background-color: #ccc;">
-            <div class="col-md-4 col-xs-12" style="height: 100%;">
-                <p style="margin: 100px 20px 0; font-size: 25px; font-family: 'ADLaM Display', cursive; font-family: 'Cousine', monospace; font-family: 'Kanit', sans-serif; font-family: 'Oswald', sans-serif; font-family: 'Roboto Slab', serif;">
-                    Looking for a deck builder in your area? AMAZING DECKS IN SEATTLE is your go-to choice. We deliver quality craftsmanship, outstanding customer service, and competitive pricing. Explore our impressive range of projects in the portfolio below. From modern luxuries to timeless charm, Ace of Decks handles your project from start to finish.
-                </p>
-                <a href="/gallery" class="btn bg-light aboutss"><strong>VIEW PORTFOLIO</strong></a>
-            </div>
-            <div class="col-md-8 col-xs-12" style="height: 100%; padding: 0;">
-                <div class="slideshow-container" style="height: 100%;">
-                    <div class="slideshow-inner">
-                        {% for project in projects %}
-                            <img src="{{ project.primary_image.url }}" class="slideshow-image background-imagess" style="max-width: 100%; height: 100%;">
-                        {% endfor %}
-                    </div>
+<div class="container-fluid full-width-container ">
+    <div class="row no-margin-row" style="height: 900px; background-color: #ccc;">
+        <div class="col-md-4 col-xs-12 no-padding-col">
+            <p class= "beautiful-text text-center align-center"style="font-size: 25px; font-family: 'ADLaM Display', cursive; font-family: 'Cousine', monospace; font-family: 'Kanit', sans-serif; font-family: 'Oswald', sans-serif; font-family: 'Roboto Slab', serif;">
+                Looking for a deck builder in your area? AMAZING DECKS IN SEATTLE is your go-to choice. We deliver quality craftsmanship, outstanding customer service, and competitive pricing. Explore our impressive range of projects in the portfolio below. From modern luxuries to timeless charm, Ace of Decks handles your project from start to finish.
+            </p>
+            <a href="/gallery" class="btn bg-light aboutss"><strong>VIEW PORTFOLIO</strong></a>
+        </div>
+        <div class="col-md-8 col-xs-12 no-padding-col container">
+            <div class="slideshow-container" style="height: 100%;">
+                <div class="slideshow-inner">
+                    {% for project in projects %}
+                        <img src="{{ project.primary_image.url }}" class="slideshow-image background-imagess" >
+                    {% endfor %}
                 </div>
             </div>
         </div>
     </div>
-    
-    
+</div> 
+
     
     
         </div>
         <br><hr>
-    <div class = "main overlay">
-    
-     <strong><p id="section4" style="color: goldenrod; font-size: 50px; text-align: center; position: relative;">
+    <div class = "main overlay ">
+    <div>
+     <strong><p id="section4" style="color: goldenrod; font-size: 40px; text-align: center; position: relative;">
         TESTIMONIALS
-        <span style="position: absolute; left: 0; top: 50%; width: 100%; border-top: 1px solid goldenrod; z-index: -1;"></span>
+        <span style="position: absolute; left: 0; top: 50%;  border-top: 1px solid goldenrod; z-index: -1;"></span>
     </p></strong>
     
     
-     {% comment %} <div class="introduction container">
-        <p>We are a dedicated team of professionals committed to providing high-quality deck construction and remodeling services. Our portfolio showcases the many projects we have completed over the years, from rooftop terraces to small balconies. With our expertise and attention to detail, every job is completed with excellence. We take pride in giving our customers the highest level of satisfaction when it comes to deck design and construction. You can count on us for all your deck installation needs!</p>
-    </div> {% endcomment %}
+     <div class="introduction container text-center">
+        
     <div class=" carousel">
         <div id="reviewsCarousel" class="carousel slide" data-ride="carousel">
             <!-- Indicators -->
@@ -182,8 +180,8 @@
     </div>
     <br>
     <br><br>
-    </div>
-    
+    </div> 
+   
     
     </div>
      </div>
@@ -224,29 +222,15 @@
                         </li>
                     </ul>
                 </div>
-                <div class="col-md-6">
-        <div>
-            <img src="{% static 'images/DJI_0009.JPG' %}" alt="Image 4" class="scroll-animation loading-animation img-responsive" data-animation="grow" style="max-width: 100%; height: auto; margin-right: 50px; margin-top: 20px;">
-        </div>
+        <div class="col-md-6">
+            <img src="{% static 'images/DJI_0009.JPG' %}" alt="Image 4" class=" loading-animation img-responsive scroll-animation" data-animation="grow" style="max-width: 100%; height: auto; margin-top: 20px;">
+        </div> 
     </div>
         </div>
     </div>
-    
+   
               
-{% comment %}                   
-            <p class = "ma"><span> ✔  </span><span></span>  <span style="color:black; font-size:20px;">Delightful Service</span> Exceptional customer care from consultation to installation<p>
-            <p class = "ma"><span> ✔  </span><span></span>  <span style="color:black; font-size:20px;">Safety Focus</span> Prioritize safety with secure railings<p>
-               
-           
-            <p class = "ma"><span> ✔  </span><span></span>  <span style="color:black; font-size:20px;">Curb Appeal Enhancement</span> Elevate home aesthetics<p>
-             
-            <p class = "ma"><span> ✔  </span><span></span>  <span style="color:black; font-size:20px;">Affordable Elegance</span> Premium railings at competitive prices<p>
-                 
-            <p class = "ma"><span> ✔  </span><span></span>  <span style="color:black; font-size:20px;">Efficient Timelines</span> Punctual installations for minimal disruption<p>
-                   
-            <p class = "ma"><span> ✔  </span><span></span>  <span style="color:black; font-size:20px;">Space Transformation</span> Create memorable outdoor havens effortlessly<p> {% endcomment %}
-                
-    
+
     <hr><br>
 </div>
 

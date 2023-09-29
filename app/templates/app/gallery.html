@@ -3,37 +3,47 @@
 {%block content %}
 
 
+<style>
+    .project-image {
+        max-width: 100%;
+        height: auto;
+    }
 
+    .portfolio.container {
+        max-width: 100%;
+        overflow: auto;
+    }
+</style>
 
 <img src="{% static 'images/before.png' %}" class="background-image loadin-animation">
-<div class = "fullscreen-container">  
-<div class ="overlay-text container">
-<p> <strong>PROJECT GALLERY</strong> <p>
-</div>
+<div class="fullscreen-container">
+    <div class="overlay-text container">
+        <p><strong>PROJECT GALLERY</strong></p>
+    </div>
 </div>
 <div class="icon-container">
     <a href="/policy" style="color: inherit; text-decoration: none;">
-         <p><i class="far fa-message fa-3x"></i></p>
-     </a>
- </div>
-<div class = "background">
-<div class = "container">
-    <p class = " portfolio">OUR PORTFOLIO<p>
-    <p class = " portfolioo">Explore our captivating portfolio showcasing the exquisite craftsmanship and stunning designs of our decked-out houses<p>
+        <p><i class="far fa-message fa-3x"></i></p>
+    </a>
+</div>
+<div class="background">
+    <div class="container">
+        <p class="portfoli">OUR PORTFOLIO</p>
+        <p class="portfolioo text-center">Explore our captivating portfolio showcasing the exquisite craftsmanship and stunning designs of our decked-out houses</p>
     </div>
     <br><br><br>
+    
+    
     <div class="portfolio container">
         {% for project in projects %}
             <div class="project" data-project-id="{{ project.id }}">
-                <img src="{{ project.primary_image.url }}" alt="{{ project.title }}" class="project-image" width="400px" height="400px" >
-                <div class="project-name" >{{ project.title }}</div>
-
+                <img src="{{ project.primary_image.url }}" alt="{{ project.title }}" class="project-image">
+                <div class="project-name" style="font-size: 20px">{{ project.title }}</div>
             </div>
         {% endfor %}
-    </div>
-    <div class= "imag">
-    <div id="image-gallery" class = "image-gallery fixed-bottom  carousel-inner" style="display:none">
-        </div>
-    </div>
+    <div class="imag">
+        <div id="image-gallery" class="image-gallery fixed-bottom carousel-inner" style="display: none"></div>
+    </div> 
+</div>
 
 {% endblock %}

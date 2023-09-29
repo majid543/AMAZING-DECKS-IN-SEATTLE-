@@ -1,17 +1,36 @@
 {% load static %}
-<nav class="navbar  navbar-transparent">
-   
-  <div class="">
-    <img src="{% static 'images/12.png' %}" width="50px" style="vertical-align: middle;">
-    <h2 style="color:#ffc107; display: inline; margin-left: 10px;" class= "navbar-brand"><strong>AMAZING DECKS IN SEATTLE</strong></h2>
+<nav class="navbar navbar-expand-lg navbar-transparent">
+  <div class="container">
+    <a class="navbar-brand" href="#">
+      <img src="{% static 'images/12.png' %}" width="50px" style="vertical-align: middle;">
+      <span style="color:#ffc107; margin-left: 10px;font-size:15px ;"><strong>ADIS</strong></span>
+  </a>
+  <button class="navbar-toggler align-items-center" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon">
+          <i class="fas fa-bars" style="color: #ffc107;"></i>
+      </span>
+  </button>
+  
+    
+      <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                  <a class="nav-link navbar-brand" href="/home" style="color: #ffc107;">HOME</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link navbar-brand" href="/gallery" style="color: #ffc107;">GALLERY</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link navbar-brand" href="/schedule" style="color: #ffc107;">SCHEDULE SERVICE</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link navbar-brand" href="/policy" style="color: #ffc107;">PRIVACY POLICY</a>
+              </li>
+          </ul>
+      </div>
   </div>
-    <div>
-      <a class="navbar-brand" href="/home" style="color: #ffc107;">HOME</a>
-      <a class="navbar-brand" href="/gallery" style="color: #ffc107;">GALLERY</a>
-      <a class="navbar-brand" href="/schedule" style="color: #ffc107;">SCHEDULE SERVICE</a>
-      <a class="navbar-brand" href="/policy" style="color: #ffc107;">PRIVACY POLICY</a>
-    </div>
 </nav>
+
 
 
 

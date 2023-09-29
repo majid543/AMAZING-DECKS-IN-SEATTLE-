@@ -1,3 +1,21 @@
+.navbar-nav .nav-item.dropdown-menu a {
+    color: #fff; /* Text color for the dropdown items */
+    font-weight: bold; /* Make the text bold */
+}
+.beautiful-text {
+    font-size: 20px; /* Adjust the font size as needed */
+    font-family: 'Roboto Slab', serif;
+    line-height: 1.5; /* Adjust line height for better readability */
+    margin: 20px 0; /* Add margin for spacing */
+    color: #333; /* Adjust text color */
+}
+
+/* Add custom styles for specific font families if needed */
+.beautiful-text {
+    font-family: 'Kanit', sans-serif;
+    /* Additional font-family styles can be added here */
+}
+
 .loading-animation {
     animation: growImage 2s ease-in-out; /* Use the keyframes, specify duration and timing function */
     transform-origin: center; /* Set the transform origin to the center for a smooth effect */
@@ -151,11 +169,11 @@
 .overlay-text {  
     position: absolute;
     color: rgb(245, 170, 32);
-    font-size: 60px;
     font-family: 'ADLaM Display', cursive;
    font-family: 'Cousine', monospace;
      font-family: 'Oswald', sans-serif;
    font-family: 'Roboto Slab', serif;
+   font-size:40px;
    top: 50%;
    left: 50%;
    transform: translate(-50%, -50%);
@@ -414,7 +432,7 @@ margin-top: 70px;
     align-items: center;
     flex-direction: column;
     justify-content: space-around;
-    font-size: 60px;
+    font-size: 40px;
     border:2px white solid;
     font-family: Arial, sans-serif;
     text-shadow: 4px 2px 4px rgb(0, 0, 0); 
@@ -501,6 +519,12 @@ justify-content: center;
 display: flex;
 
 }
+@media (max-width: 1000px) {
+    .right-aligned-text {
+        text-align: center; /* Center-align the text on mobile */
+        font-size: 16px; /* Adjust font size for mobile */
+    }}
+
 .portfoliooo {
     font-family: 'ADLaM Display', cursive;
 font-family: 'Cousine', monospace;
@@ -553,22 +577,27 @@ flex-wrap: wrap;
     width: 100%;
     
 }
-
-
-.define-container {
+.my-custom-column {
     display: flex;
     justify-content: space-between;
     padding: 50px 0;
+    text-align: center;
+}
+
+.define-container {
+  
+    align-items: center;
+    justify-content:center ;
+    padding: 50px 0;
 }
 .define-container div {
-    flex: 1;
     text-align: center;
 }
 .number {
     font-size: 50px;
 }
 .t {
-    font-size: 30px;
+    font-size: 25px;
     margin-top: 10px; /* Add spacing between number and text */
 }
 
