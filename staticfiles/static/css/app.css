@@ -104,11 +104,15 @@
 .overlay-text {  
     position: absolute;
     color: rgb(245, 170, 32);
-    font-size: 80px;
+    font-size: 60px;
     font-family: 'ADLaM Display', cursive;
    font-family: 'Cousine', monospace;
      font-family: 'Oswald', sans-serif;
    font-family: 'Roboto Slab', serif;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   margin-top: 80px;
  }
 
  .centered-div {
@@ -154,7 +158,8 @@
     font-size: 24px;
     color: white;
     padding-right: 20px; /* Add some space between the text and the right edge */
-    transition: color 0.3s ease; /* Transition for the hover effect */
+    transition: color 0.3s ease; 
+    position: static;/* Transition for the hover effect */
 }
 
 /* Hover effect to change the text color */
@@ -210,6 +215,8 @@
 }
 .navbar .navbar-brand {
     position: relative;
+    position: relative;
+    z-index :1;
 }
 .container2 {
     background-color: rgb(139, 136, 136);

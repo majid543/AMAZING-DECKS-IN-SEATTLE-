@@ -8,24 +8,33 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="{% static 'css/estimate.css' %}">
-    <br><br><br>
-<i>
- <div class="">
+    <br><br>
+    <div class="text-black">
+        <div class="black-bg">
+            <br>
+            <i>
+                <h1 class="bg-grey rounded-pill" style=" font-size: 70px; font:bold;">CALCULATE QUICK ESTIMATE OF THE SERVICES</h1><br>
+          
+            <br>
     
-    <br>
-    <script src="{% static 'js/app.js' %}"></script>
-<div class="">
-<div class="card ">
-    <h1 style="color:white;font-size:50px; " class = "">CALCULATE A QUICK ESTIMATE OF THE SERVICE</h1><br>
+            <div class="container ">
+                <strong><p  style=" font-size: 30px;">Information about deck</p></strong>  </i>
+                <div class="form">
+   
+
     <form method="post">
         {% csrf_token %}
     
         {{form}}
-        <br><br><br><br>
-            <button type="button" class = "bg-secondary tex-align-right" onclick="nextQuestion()">NEXT...</button>
+        <br><br>
+        <button type="submit" class="btn btn-secondary btn-lg mx-auto d-block">Submit</button>
         </div>
     
         
     </form><i>
-</div></body>
+
+        
+</div>
+<script src="{% static 'js/app.js' %}"></script>
+</body>
 </html>
