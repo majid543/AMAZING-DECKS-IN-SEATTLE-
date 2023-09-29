@@ -2,10 +2,7 @@ from django import forms
 from .models import UserInput,Schedule
 
 class UserInputForm(forms.ModelForm):
-    age = forms.IntegerField(
-        label='Age',
-        widget=forms.NumberInput(attrs={'class': 'form-control', 'placeholder': 'Enter your age'}),
-    )
+  
     distance = forms.DecimalField(
         label='Distance',
         widget=forms.NumberInput(attrs={'class': 'form-control', 'placeholder': 'Enter the distance'}),
@@ -17,7 +14,7 @@ class UserInputForm(forms.ModelForm):
 
     class Meta:
         model = UserInput
-        fields = ['age', 'distance', 'deck_height']
+        fields = [ 'distance', 'deck_height']
 
 
 class ScheduleForm(forms.ModelForm):
